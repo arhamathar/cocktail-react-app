@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Error() {
   return (
-    <div>
-      <h1><span> 404 </span>Page Not Found <span>:{"("}</span></h1>
-    </div>
+    <section className="error-page section">
+      <h1 className="section-title"><span> 404 </span>Page Not Found <span>:{"("}</span></h1>
+      <Link to="/" className="btn btn-primary">Back Home</Link>
+    </section>
   )
 }
 
-export default Error
+export default Error;
