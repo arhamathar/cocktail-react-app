@@ -16,6 +16,7 @@ function Home() {
         const responseData = await response.json();
         if (responseData.drinks) {
           setLoadedCocktails(responseData.drinks);
+          console.log(responseData.drinks);
         }
         else {
           setLoadedCocktails([]);
@@ -26,7 +27,7 @@ function Home() {
       setLoading(false);
     };
     sendRequest();
-  }, []);
+  }, [search]);
 
   return (
     <main>

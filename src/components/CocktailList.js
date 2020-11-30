@@ -11,9 +11,9 @@ function CocktailList(props) {
   }
 
   return (
-    <ul className="section">
+    <section className="section">
       <h2 className="section-title">Cocktails</h2>
-      <div>
+      <div className="cocktails-center">
         {props.loadedCocktails.map((cocktail) => {
           return (
             <CocktailItem
@@ -27,7 +27,7 @@ function CocktailList(props) {
           );
         })}
       </div>
-    </ul>
+    </section>
   );
 }
 
