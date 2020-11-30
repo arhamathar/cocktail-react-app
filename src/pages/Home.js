@@ -13,10 +13,11 @@ function Home() {
         const response = await fetch(
           `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`
         );
+
         const responseData = await response.json();
+
         if (responseData.drinks) {
           setLoadedCocktails(responseData.drinks);
-          console.log(responseData.drinks);
         }
         else {
           setLoadedCocktails([]);

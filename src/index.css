@@ -346,48 +346,59 @@ Form
   padding: 0.5rem;
   font-size: 1.2rem;
 }
-/* 
-====== 
-Cocktail
-======
-*/
+
+/* ====== Cocktail ====== */
 
 .cocktail-section {
   text-align: center;
 }
+
 .drink {
   width: var(--smallWidth);
   max-width: var(--fullWidth);
   margin: 0 auto;
   text-align: left;
 }
+
 .drink img {
   border-radius: var(--mainBorderRadius);
+  max-width: 20rem;
 }
+
 .drink p {
   font-weight: bold;
+  font-size: 1.25rem;
   text-transform: capitalize;
-  line-height: 1.8;
+  line-height: 1.5;
+  color: var(--darkGrey);
 }
+
 .drink span {
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
 }
+
 .drink-data {
   background: var(--primaryLightColor);
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--primaryColor);
 }
+
 .drink-info {
   padding-top: 2rem;
 }
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 960px) {
   .drink {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 3rem;
     align-items: center;
   }
+  .drink img{
+    min-width: 25rem
+  }
+
   .drink-info {
     padding-top: 0;
   }
