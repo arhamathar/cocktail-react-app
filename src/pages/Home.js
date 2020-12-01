@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CocktailLists from '../components/CocktailList';
+import SearchForm from '../components/SearchForm';
 
 function Home() {
   const [loading, setLoading] = useState(false);
@@ -32,12 +33,13 @@ function Home() {
 
   return (
     <main>
+      <SearchForm setSearch={setSearch} />
       <CocktailLists
         loadedCocktails={loadedCocktails}
         loading={loading}
       />
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -130,7 +130,8 @@ img {
 
 .btn-details:hover {
   background: var(--primaryLightColor);
-  border-color: var(--primaryLightColor);
+  border-color: var(--primaryColor);
+  color: var(--darkGrey);
 }
 
 /* ====== Navbar ====== */
@@ -309,11 +310,8 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* 
-====== 
-Form
-======
-*/
+/* ====== Form ====== */
+
 .search {
   margin-top: 1rem;
   padding-bottom: 0;
@@ -323,8 +321,8 @@ Form
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--maxWidth);
-  background: var(--mainWhite);
-  padding: 2rem 2.5rem;
+  background: var(--primaryLightColor);
+  padding: 1.5rem 2.5rem;
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);
   box-shadow: var(--lightShadow);
@@ -332,10 +330,11 @@ Form
 
 .form-control label {
   display: block;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   letter-spacing: 0.25rem;
   color: var(--primaryColor);
+  font-size: 1rem;
 }
 .form-control input {
   width: 100%;
