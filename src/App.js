@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <Router basename="/cocktail-react-app">
+    <Router>
       <Navbar />
       <Switch>
         <Route exact path="/">
